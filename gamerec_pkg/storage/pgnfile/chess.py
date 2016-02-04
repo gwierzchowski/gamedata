@@ -1,7 +1,24 @@
 # -*- coding: UTF-8 -*-
 '''
 This package contains classes related to Chess Games storage in .pgn files.
-This package uses configuration file: PGNChessGC.pgn installed in user home folder - see README.md file.
+This package uses configuration file: PGNChessGC.pgn installed in user home folder.
+
+The standard of PGN file (point 4.1) states that a file is encoded using ISO 8859/1 (Latin 1) codes.
+This class extends this a little and instroduces a special mark in the form of line
+% vi: encoding=<encoding vi spec>
+which should be at the very beggining of file.
+Such line is by PGN standard a comment line that does not affect a games data.
+But this module uses this as encoding specification for Python code while reading file.
+This allows to have PGN file encoded in different standard and containg a national characters that are out of 
+ISO 8859/1 coding shema. My experience is that SCID program properly inports and display utf-8 encoded
+files with national characters, and I'm sorry but I want to have a game comments in my national langugage.
+BTW: It is time to change PGN specification to use utf-8 instead of outdated ISO 8859/1.
+In case of lack of this line ISO 8859/1 is assumed.
+
+References:
+Vi Encoding names: http://vimdoc.sourceforge.net/htmldoc/mbyte.html#encoding-names
+PDN Specification1: http://www6.chessclub.com/help/PGN-spec
+PDN Specification2: http://www.saremba.de/chessgml/standards/pgn/pgn-complete.htm
 '''
 
 # Python standard libraries

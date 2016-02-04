@@ -14,6 +14,7 @@ BlackElo
 WhiteTitle
 BlackTitle
 TimeControl
+ECO
 Result
 
 % Other tags will be saved in common field: xxx

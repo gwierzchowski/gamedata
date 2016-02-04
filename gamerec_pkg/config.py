@@ -6,7 +6,7 @@ from os.path import join, expanduser
 # Set version number here
 gamerec_author  = "Grzegorz Wierzchowski <gwierzchowski@wp.pl>"
 gamerec_status  = '4 - Beta'
-gamerec_version = '0.0.2'
+gamerec_version = '0.0.3'
 gamerec_date    = '2016 January'
 
 #Development Status :: 1 - Planning

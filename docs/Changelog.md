@@ -14,6 +14,11 @@ Package could be extended in following directions:
 Unfortunately - I'm very sorry, but it does not look like I will have time for this in any near future :(.
 But I welcome bug reports that should be reported in GitHub project page - for this I will try to find time :).
 
+0.0.3 (2016.02.04):
+----------------------------------
+### Improvements
+- Change in default configuration (for narmalizePGN needs): add ECO as separate field in SQLite export.
+
 0.0.2 (2016.01.29):
 ----------------------------------
 ### Improvements
